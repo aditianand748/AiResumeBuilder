@@ -36,3 +36,13 @@
   background-color: #f3f4f6; /* gray-100 background track */
   border-radius: 9999px;
 }
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
