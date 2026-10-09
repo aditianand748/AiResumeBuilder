@@ -66,3 +66,40 @@ Images: ImageKit for background removal & face focus
 - Manually Save your resume.
 - Export to PDF/Docx if needed.
 
+## ⚙️ Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/aditianand748/AiResumeBuilder.git
+cd AiResumeBuilder
+```
+
+### 2. Backend Setup
+```bash
+cd server
+npm install
+npm run dev
+```
+
+Create a `.env` file in the `server` directory:
+```env
+PORT=3000
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+IMAGEKIT_PUBLIC_KEY=your_imagekit_public_key
+IMAGEKIT_PRIVATE_KEY=your_imagekit_private_key
+IMAGEKIT_URL_ENDPOINT=your_imagekit_url_endpoint
+GEMINI_API_KEY=your_gemini_api_key
+```
+
+### 3. Frontend Setup
+```bash
+cd ../client
+npm install
+npm run dev
+```
+
+Create a `.env` file in the `client` directory:
+```env
+VITE_BASE_URL=http://localhost:3000
+```
